@@ -37,6 +37,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.practicum.playlist_maker_android.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.practicum.playlist_maker_android.SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name="androidx.compose.ui.tooling.PreviewActivity"
             android:exported="true" />
 

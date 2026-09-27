@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.compose.material3:material3-android:1.4.0] C:\Users\local\.gradle\caches\9.6.0\transforms\0af32a84e519aed562d3741488d9d893\transformed\material3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.material:material-android:1.10.4] C:\Users\local\.gradle\caches\9.6.0\transforms\b64e5ccac257d942624d443fc46017e6\transformed\material\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-ripple-android:1.10.4] C:\Users\local\.gradle\caches\9.6.0\transforms\0d63c7cbd7b9a7719cb7078c8d48f8d9\transformed\material-ripple\AndroidManifest.xml:2:1-7:12
@@ -80,8 +80,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\local\.gradle\caches\9.6.0\tra
 	xmlns:android
 		ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:5:5-22:19
-INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:5:5-30:19
+INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:5:5-30:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.10.4] C:\Users\local\.gradle\caches\9.6.0\transforms\7629ca5cf6992d4d9bd57362deb23084\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.10.4] C:\Users\local\.gradle\caches\9.6.0\transforms\7629ca5cf6992d4d9bd57362deb23084\transformed\ui-tooling\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\local\.gradle\caches\9.6.0\transforms\19e50b0eaa0d75ae4dd1646d10b093a1\transformed\emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
@@ -136,6 +136,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.practicum.playlist_maker_android.SearchActivity
+ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:23:9-25:40
+	android:exported
+		ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:24:13-43
+activity#com.practicum.playlist_maker_android.SettingsActivity
+ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:27:9-29:40
+	android:exported
+		ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml:28:13-45
 uses-sdk
 INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\local\AndroidStudioProjects\playlistmakerandroid\app\src\main\AndroidManifest.xml
