@@ -20,7 +20,7 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun PlaylistmakerandroidTheme(
     darkTheme: Boolean = false,     // тёмную пока не поддерживаем
-    dynamicColor: Boolean = false,  // ВАЖНО: отключаем
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit,
 ) {
     // Всегда используем светлую схему — наши цвета из Color.kt
