@@ -4,7 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.practicum.playlist_maker_android.ui.main.MainScreen
+import androidx.navigation.compose.rememberNavController
+import com.practicum.playlist_maker_android.ui.navigation.PlaylistHost
 import com.practicum.playlist_maker_android.ui.theme.PlaylistmakerandroidTheme
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +14,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PlaylistmakerandroidTheme {
-                MainScreen()
+                val navController = rememberNavController()
+                PlaylistHost(navController = navController)
             }
         }
     }

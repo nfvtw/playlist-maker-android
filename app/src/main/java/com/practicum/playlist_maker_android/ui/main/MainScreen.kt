@@ -1,6 +1,5 @@
 package com.practicum.playlist_maker_android.ui.main
 
-import android.content.Intent
 import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -33,14 +32,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.practicum.playlist_maker_android.SearchActivity
-import com.practicum.playlist_maker_android.SettingsActivity
 import com.practicum.playlist_maker_android.ui.theme.BlueColor
 import com.practicum.playlist_maker_android.ui.theme.ChevronColor
 import com.practicum.playlist_maker_android.ui.theme.TextColor
 
 @Composable
-fun MainScreen() {
+fun MainScreen(
+    onSearchClick: () -> Unit = {},
+    onSettingsClick: () -> Unit = {},
+    ) {
     val context = LocalContext.current
 
     val items = listOf(
@@ -77,15 +77,8 @@ fun MainScreen() {
                 items.forEach { item ->
                     MenuRow(item = item) {
                         when (item.title) {
-                            "Поиск" -> context.startActivity(
-                                Intent(context, SearchActivity::class.java)
-                            )
-
-                            "Настройки" -> context.startActivity(
-                                Intent(context, SettingsActivity::class.java)
-                            )
-
-                            // Плейлисты и Избранное — экранов ещё нет, оставляем заглушку
+                            "Поиск" -> onSearchClick()
+                            "Настройки" -> onSettingsClick()
                             else -> Toast.makeText(
                                 context,
                                 "Нажата кнопка \"${item.title}\"",
