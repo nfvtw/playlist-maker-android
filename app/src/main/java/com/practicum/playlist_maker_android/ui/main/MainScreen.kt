@@ -58,8 +58,7 @@ fun MainScreen(
         Text(
             text = "Playlist maker",
             color = Color.White,
-            fontSize = 22.sp,
-            fontWeight = FontWeight.Medium,
+            style = MaterialTheme.typography.titleLarge,   // вместо fontSize + fontWeight
             modifier = Modifier.padding(horizontal = 16.dp, vertical = 20.dp),
         )
 
@@ -111,7 +110,7 @@ private fun MenuRow(item: MenuItem, onClick: () -> Unit) {
         Text(
             text = item.title,
             color = TextColor,
-            fontSize = 16.sp,
+            style = MaterialTheme.typography.bodyLarge,    // вместо fontSize
             modifier = Modifier.weight(1f),
         )
         Icon(

@@ -60,6 +60,7 @@ fun SearchScreen(
             query = query,
             onQueryChange = { query = it },
             onClearClick = { query = "" },
+            onSearchClick = { /* Заглушка */ }
         )
     }
 }
@@ -81,10 +82,9 @@ private fun SearchHeader(onBackClick: () -> Unit) {
         }
         Spacer(Modifier.width(4.dp))
         Text(
-            text = "Поиск",
+            text = stringResource(R.string.search_hint),
             color = TextColor,
-            fontSize = 22.sp,
-            fontWeight = FontWeight.Medium,
+            style = MaterialTheme.typography.titleLarge,
         )
     }
 }
@@ -94,6 +94,7 @@ private fun SearchField(
     query: String,
     onQueryChange: (String) -> Unit,
     onClearClick: () -> Unit,
+    onSearchClick: () -> Unit,
 ) {
     Row(
         modifier = Modifier
@@ -107,12 +108,14 @@ private fun SearchField(
             .padding(horizontal = 12.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        Icon(
-            imageVector = Icons.Default.Search,
-            contentDescription = null,
-            tint = HintColor,
-            modifier = Modifier.size(20.dp),
-        )
+        IconButton(onClick = onSearchClick) {
+            Icon(
+                imageVector = Icons.Default.Search,
+                contentDescription = null,
+                tint = HintColor,
+                modifier = Modifier.size(20.dp),
+            )
+        }
         Spacer(Modifier.width(8.dp))
         Box(
             modifier = Modifier.weight(1f),

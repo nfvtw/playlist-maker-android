@@ -53,8 +53,6 @@ fun SettingsScreen(
             .background(Color.White),
     ) {
         SettingsHeader(onBackClick = onBackClick)
-
-        // Тёмная тема — Switch, логика переключения будет позже
         var darkThemeEnabled by remember { mutableStateOf(false) }
         SwitchRow(
             title = stringResource(R.string.settings_dark_theme),
@@ -67,7 +65,7 @@ fun SettingsScreen(
             title = stringResource(R.string.settings_share_app),
             icon = Icons.Default.Share,
         ) {
-            val shareMessage = context.getString(R.string.share_app_text)
+            val shareMessage = R.string.share_app_text
             val shareIntent = Intent(Intent.ACTION_SEND).apply {
                 type = "text/plain"
                 putExtra(Intent.EXTRA_TEXT, shareMessage)
@@ -80,9 +78,9 @@ fun SettingsScreen(
             title = stringResource(R.string.settings_support),
             icon = Icons.Default.Email,
         ) {
-            val email = context.getString(R.string.support_email)
-            val subject = context.getString(R.string.support_email_subject)
-            val body = context.getString(R.string.support_email_body)
+            val email = R.string.support_email
+            val subject = R.string.support_email_subject
+            val body = R.string.support_email_body
 
             val emailIntent = Intent(Intent.ACTION_SENDTO).apply {
                 data = Uri.parse("mailto:")
