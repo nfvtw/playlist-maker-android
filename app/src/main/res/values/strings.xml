@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">playlist-maker-android АвджянЭмиль</string>
+
+    <!-- Экран поиска -->
+    <string name="search_hint">Поиск</string>
+
+    <!-- Экран настроек -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_dark_theme">Тёмная тема</string>
+    <string name="settings_share_app">Поделиться приложением</string>
+    <string name="settings_support">Написать в поддержку</string>
+    <string name="settings_terms">Пользовательское соглашение</string>
+
+    <!-- Сообщение для шеринга -->
+    <string name="share_app_text">Присоединяйтесь к приложению Playlist Maker!</string>
+
+    <!-- Email для поддержки -->
+    <string name="support_email">eavdzhian@sfedu.ru</string>
+    <string name="support_email_subject">Сообщение техподдержке приложения Playlist Maker</string>
+    <string name="support_email_body">Спасибо за приложение!</string>
+
+    <!-- Ссылка на оферту -->
+    <string name="practicum_offer_url">https://yandex.ru/legal/practicum_offer</string>
 </resources>
